@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;1,600;1,700&family=Kalam:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* font-family: 'IBM Plex Sans', sans-serif;
+font-family: 'Kalam', cursive; */
+
+.home {
+    background-image: linear-gradient(to right top, #ffffff, #fdfdfe, #fafafd, #f7f8fd, #f3f6fc, #dee5ed, #c9d4de, #b4c3ce, #88a1ab, #5e8088, #356064, #0a423f);
+    height: 100vh;
+    
+}
+/* barra de navegacion */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    height: 85px;
+    align-items: center;
+    background-image: linear-gradient(to right top, #f5fbf9, #d6e3dc, #bbccbd, #a4b39d, #919b7d);
+
+}
+
+.navbar img{
+    height: 70px;
+    border-radius: 50%;
+    margin-left: 30px;
+    transition: all 0.3s;
+}
+
+.navbar img:hover{
+    transform: scale(1.1);
+}
+
+.navlinks{
+    display: flex;
+    padding: 15px;
+    margin-right: 10px;
+}
+
+.navlinks li{
+    display: inline-block;
+    padding: 10px;
+    margin-right: 20px;
+    transition: all 0.3s;
+}
+
+.navlinks li a{
+    text-decoration: none;
+    font-family: 'Kalam', cursive;
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(22, 29, 35);
+}
+
+.navlinks li:hover{
+    transform: scale(1.1);
+}
+.navlinks li a:hover{
+    color: rgb(30, 232, 57);
+}
+
+ /*fin barra de navegacion*/   
+ 
+/* section home */
+
+
+.info-home{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: auto;
+}
+
+.titulo{
+    height: 200px;
+    margin-left: 10%;
+    padding-top: 250px;
+}
+.titulo h1{
+    font-family: 'Kalam', cursive;
+    font-size: 40px;
+    font-weight: 900;
+    color: #546e60;
+    text-shadow: 5px -5px 5px rgba(70, 100, 70, 0.522);
+}
+.titulo p{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    padding-top: 20px;
+    color: #8b8621fe;
+    text-shadow: 5px -5px 10px #657468;
+}
+
+.imagen1 img{
+    height: 250px;
+    margin-left: 70%;
+    border-radius: 40%;
+    box-shadow: 20px -10px 20px rgba(57, 102, 85, 0.677);
+}
+
+.imagen2 img{
+    height: 250px;
+    margin-left: 0;
+    border-radius: 20%;
+    box-shadow: 10px -5px 15px #b4c3ce; 
+}
+
+.descubre-mas{
+    height: 100px;
+    width: 200px;
+    margin-left: 45%;
+    margin-bottom: 10px;
+    position: relative;
+    background-image: radial-gradient(circle, #d0f2dd, #a3cab6, #78a391, #4e7e6f, #235a4e);
+    border-radius: 50%;
+}
+.descubre-mas h3{
+    font-family: 'Kalam', cursive;
+    font-size: 25px;
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    color: #fcfcf8fe;
+}
+.descubre-mas img{
+    position: absolute;
+    left: 45%;
+    top: 55%;
+    
+}
+
+main{
+    background-color: bisque;
+}
+
+footer{
+    background-color: cadetblue;
+}
+
