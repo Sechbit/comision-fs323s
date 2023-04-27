@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;1,100&family=Satisfy&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* font-family: 'IBM Plex Serif', serif;
+font-family: 'Satisfy', cursive; */
+
+/* navbar */
+header{
+    height: 110px;
+    background-color: #A9907E;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.home{
+    display: flex;
+    align-items: center;
+}
+.home h1{
+    font-family: 'Satisfy', cursive;
+    font-size: 40px;
+    color: rgba(82, 20, 20, 0.696);
+}
+.home a img{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    margin: 5px 10px;
+    
+}
+.home a:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+nav{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    
+} 
+.navbar{
+    display: flex;
+    list-style: none;
+    
+}
+.navbar li a{
+    text-decoration: none;
+    color: rgba(82, 20, 20, 0.696);
+    font-family: 'Satisfy', cursive;
+    font-size: 30px;
+    margin: 20px;
+    transition: all 0.3s;
+}
+.navbar li:hover{
+    transform: scale(1.1);
+    transition: all 0.2s;
+}
+.navbar li a:hover{
+    color: aliceblue;
+       
+}
+/* main tarjeta */
+
+main{
+    height: 670px;
+    width: 100%;
+    background-color: #9F3F4F;
+    display: flex;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    width: 900px;
+    margin: auto;
+    background-color: azure;
+    border-radius: 30px;
+    
+}
+
+.icono{
+    display: flex;
+    height: 270px;
+    width: 900px;
+    background-color: #FAFAFA;
+    border-radius: 30px;
+    font-size: 170px;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-cont{
+    display: flex;
+    border-radius: 30px;
+    
+}
+.temperatura{
+    display: flex;
+    height: 180px;
+    width: 630px;
+    background-color: #080705;
+    border-bottom-left-radius: 30px;
+    
+}
+.grados{
+    display: flex;
+    height: 180px;
+    width: 250px;
+    color: #FFFFFF;
+    font-size: 110px;
+    align-items: center;
+    justify-content: center;
+}
+
+   
+.cielo-ciudad{
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    width: 380px;
+    color: #F2F2F2;
+    font-family: 'IBM Plex Serif', serif;
+    justify-content: center;
+}
+.nubosidad{
+    font-size: 50px;
+    font-weight: 50;
+}
+.lugar{
+    font-size: 25px;
+}
+.fecha{
+    display: flex;
+    height: 180px;
+    width: 270px;
+    background-color:#70C1B3 ;
+    border-bottom-right-radius: 30px;
+    color: #FFFFFF;
+    font-size: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+
