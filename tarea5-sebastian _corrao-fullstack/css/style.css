@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    display: flex;
+    justify-content: center;
+}
+.card1{
+    height: 275px;
+    width: 220px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 2rem;
+    box-shadow: 5px 5px 4px rgb(145, 143, 143);
+}
+.messi{
+    height: 50%;
+    width: 100%;
+    background-image: linear-gradient(to right, #5ecdf4, #8fd4fb, #b5dcff, #d3e5ff, #eaefff, #eaefff, #eaefff, #eaefff, #d3e5ff, #b5dcff, #8fd4fb, #5ecdf4);
+    border-bottom: 1px solid black;
+}
+.messi img{
+    height: 90px;
+    width: 90px;
+    border-radius: 5px;
+    margin-left: 62px;
+    margin-top: 23px;
+    
+}
+
+.card1-data{
+    margin: 15px;
+}
+h3{
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    
+}
+p{
+    font-size: 1rem;
+    text-align: center;
+    padding: 10px;
+}
+.cr7{
+    height: 50%;
+    width: 100%;
+    background-image: linear-gradient(to right, #12e108, #9dce00, #d4b900, #f4a433, #ff9561, #ff8a67, #ff806f, #ff7778, #ff6361, #ff4d47, #ff322b, #ff0001);
+    border-bottom: 1px solid black;
+} 
+.cr7 img{
+    height: 90px;
+    width: 90px;
+    border-radius: 5px;
+    margin-left: 62px;
+    margin-top: 23px;
+}
