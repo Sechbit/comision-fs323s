@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Roboto:ital,wght@0,100;0,500;1,300;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Bruno Ace SC', cursive; */
+
+.contenedor1{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px repeat(2, 2fr);
+    grid-template-rows: repeat(2, 2fr) 1fr;
+    grid-template-areas: 
+        "head main main"
+        "head main main"
+        "foot foot foot";
+    gap: 5px;
+}
+
+header{
+    grid-area: head;
+    background-color: #FF9D00;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+header a img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    
+    
+}
+header a:hover{
+    transform: scale(1.1);
+    transition: all 0.2s;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 30px;
+    
+    
+} 
+nav ul li:hover{
+    transform: scale(1.1);
+    transition: all 0.2s;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #4B328A;
+    font-family: 'Bruno Ace SC', cursive;
+    font-size: 20px;
+}
+nav ul li a:hover{
+    color: azure;
+}
+main{
+    grid-area: main;
+    background-color: #4B328A;
+    display: grid;
+    grid-template-columns: 4 1fr;
+    grid-template-rows: 1 1fr;
+    grid-template-areas: 
+    "tarj1 tarj2 tarj3 tarj4";
+}
+.tarj1{
+    grid-area: tarj1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tarj2{
+    grid-area: tarj2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tarj3{
+    grid-area: tarj3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tarj4{
+    grid-area: tarj4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tarjeta{
+    height: 150px;
+    width: 300px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    display: grid;
+    grid-template-columns: 3 1fr;
+    grid-template-rows: 3 1fr;
+    grid-template-areas: 
+    "icono  icono  icono"
+    "icono  icono  icono"
+    "grados ciudad fecha";
+}
+.icono{
+    grid-area: icono;
+    background-color: #FAFAFA;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.grados{
+    grid-area: grados;
+    background-color: #080705;
+    color: #F2F2F2;
+    font-size: 25px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ciudad{
+    grid-area: ciudad;
+    background-color: #080705;
+    color: #F2F2F2;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fecha{
+    grid-area: fecha;
+    background-color: #70C1B3;
+    color: #F2F2F2;
+    font-size: 1rem;
+    font-weight: 400;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer{
+    grid-area: foot;
+    background-color: #262626;
+}
+/* footer diseño */
+.grid-conteiner{
+    color: #F2F2F2;
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "empr  info"
+    "about cont";
+}
+.empresa{
+    grid-area: empr;
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+}
+.empresa img{
+    border-radius: 50%;
+    margin-right: 1rem;
+    margin-top: 5px;
+}
+.empresa h2{
+    font-weight: 700;
+    
+}
+
+.about{
+    grid-area: about;
+}
+.about p{
+    font-size: 1rem;
+    font-weight: 100;
+    text-align: center;
+    margin: 10px;
+}
+.info{
+    grid-area: info;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.info ul{
+    list-style: none;
+}
+.info ul li{
+    margin: 10px;
+}
+.info ul li a{
+    text-decoration: none;
+    color: #F2F2F2;
+    font-family: 'Bruno Ace SC', cursive;
+    font-size: 1rem;
+
+}
+.info ul li a:hover{
+    color: #FF9D00;
+}
+.contactos{
+    grid-area: cont;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.contactos a:hover{
+    transform: scale(1.5);
+    transition: all 0.2s;
+}
+.contactos a img{
+    height: 30px;
+    width: 30px;
+    margin: 15px;
+} 
+/* responsive */
+@media(max-width: 1375px){
+    main{
+        display: grid;
+        grid-template-columns: 2 1fr;
+        grid-template-rows: 2 1fr;
+        grid-template-areas: 
+        "tarj1 tarj2"
+        "tarj3 tarj4";
+    }
+}
+@media(max-width: 840px){
+    .contenedor1{
+        
+        display: grid;
+        grid-template-columns: 3 1fr;
+        grid-template-rows: 250px 2fr 1fr;
+        grid-template-areas: 
+        "head head head"
+        "main main main"
+        "foot foot foot";
+    }
+    header{
+        display: flex;
+        flex-direction: row;
+    }
+    nav ul{
+        display: flex;
+    }
+    .grid-conteiner{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+        "empr"
+        "about"
+        "info"
+        "cont";
+    }
+    .empresa{
+        align-self: center;
+        justify-self: center;
+    }
+    .info ul li{
+        display: flex;
+        align-items:  center;
+        justify-content: center;
+    }
+}
+@media(max-width: 670px){
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+        "tarj1"
+        "tarj2"
+        "tarj3"
+        "tarj4";
+    }
+}
+@media(max-width: 600px){
+    .contenedor1{
+        
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px 2fr 1fr;
+        grid-template-areas: 
+        "head"
+        "main"
+        "foot";
+    }    
+    header{
+        display: flex;
+        
+    }
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
